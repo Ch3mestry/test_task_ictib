@@ -1,0 +1,254 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.container_page {
+  background: white;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.main_page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main_header {
+  background: white;
+  height: 66px;
+  width: 1035px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.search_block {
+  display: flex;
+  align-items: center;
+}
+
+.search_img {
+  width: 34px;
+  height: 34px;
+  background-color: aqua;
+}
+
+.search_block input {
+  width: 400px;
+  height: 30px;
+}
+
+.icons_block {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.icon_calendar img {
+  width: 32px;
+  height: 34px;
+  background-color: black;
+}
+
+.icon_profil img {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(0, 0, 0);
+}
+
+.icon_login {
+  display: flex;
+  align-items: center;
+}
+
+.icon_login img {
+  width: 26px;
+  height: 25px;
+  background-color: black;
+}
+
+.icon_language {
+  display: flex;
+  align-items: center;
+}
+
+.icon_language img {
+  width: 23px;
+  height: 23px;
+  background-color: #1966a8;
+}
+
+.main_page_content {
+  width: 100%;
+  padding: 32px;
+  margin-top: 60px;
+  height: 1000px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.main_left_column {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  width: 333px;
+  height: 100%;
+}
+
+.header_column {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 104px;
+  padding: 20px 40px;
+}
+
+.logo_ufu img {
+  width: 72px;
+  height: 72px;
+}
+
+.logo_ictib img {
+  width: 133px;
+  height: 58px;
+}
+
+.scroll_info {
+  width: 333px;
+  height: 100vh;
+  background: linear-gradient(180deg, #87ae1d 0%, #1966a8 64.58%, #262878 100%);
+}
+
+.main_page_content_title {
+  color: blue;
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+
+.main_page_content_form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+}
+
+.submit_form { 
+    margin-top: 20px;
+    background-color: green;
+    width: 125px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
