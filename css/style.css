@@ -252,3 +252,16 @@ legend {
     align-items: center;
     justify-content: center;
 }
+
+.hero {
+ display: flex;
+ flex-flow: column;
+ gap: 5px;   
+ border: black 2px solid;
+ width: 500px;
+ padding: 7px;
+}
+
+.hero input {
+    border: gray 1px solid;
+}
