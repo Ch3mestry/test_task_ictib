@@ -18,13 +18,41 @@
           </div>
         </div>
         <div class="scroll_info">
-            <div class="point"><img src="/images/play-button-svgrepo-com.svg" /><a href="">Цифровые ресурсы</a></div>
-            <div class="point"><img src="/images/play-button-svgrepo-com.svg" /><a href="">Институт</a></div>
-            <div class="point"><img src="/images/play-button-svgrepo-com.svg" /><a href="">Образовательные программы</a></div>
-            <div class="point"><img src="/images/play-button-svgrepo-com.svg" /><a href="">Поступающему</a></div>
-            <div class="point"><img src="/images/play-button-svgrepo-com.svg" /><a href="">Студенту</a></div>
-            <div class="point"><img src="/images/play-button-svgrepo-com.svg" /><a href="">Выпускнику</a></div>
-            <div class="point"><img src="/images/play-button-svgrepo-com.svg" /><a href="">Сотруднику</a></div>
+          <div class="point">
+            <img src="/images/play-button-svgrepo-com.svg" /><a href=""
+              >Цифровые ресурсы</a
+            >
+          </div>
+          <div class="point">
+            <img src="/images/play-button-svgrepo-com.svg" /><a href=""
+              >Институт</a
+            >
+          </div>
+          <div class="point">
+            <img src="/images/play-button-svgrepo-com.svg" /><a href=""
+              >Образовательные программы</a
+            >
+          </div>
+          <div class="point">
+            <img src="/images/play-button-svgrepo-com.svg" /><a href=""
+              >Поступающему</a
+            >
+          </div>
+          <div class="point">
+            <img src="/images/play-button-svgrepo-com.svg" /><a href=""
+              >Студенту</a
+            >
+          </div>
+          <div class="point">
+            <img src="/images/play-button-svgrepo-com.svg" /><a href=""
+              >Выпускнику</a
+            >
+          </div>
+          <div class="point">
+            <img src="/images/play-button-svgrepo-com.svg" /><a href=""
+              >Сотруднику</a
+            >
+          </div>
         </div>
       </div>
 
@@ -70,28 +98,26 @@
               <input type="date" class="end_date field" name=" end_date" />
             </div>
             <div class="post_file">
-              <input type="file" class="form_file field" />
+              <input type="file" class="form_file" />
             </div>
             <div class="count_human">
               <input
-                class="number_human field"
-                type="number"
+                onkeypress="validate(event)"
+                class="number_human"
+                type="text"
                 placeholder=">>   Число человек   <<"
                 name="counter"
+                maxlength="1"
+                value=""
               />
+              <!-- тип инпута не "number", потому что у него нет совместимости с браузером chrome,
+                 когда устанавливаешь максимальное количество символов, то оно не работает(-->
             </div>
             <div class="humans"></div>
             <!-- (◕‿◕) -->
             <div class="submit_form">
               <input type="submit" />
-            </div>
-            <!-- <div class="hero">
-                <input type="text" class="FIO" placeholder="ФИО">
-                <input type="text" class="rang" placeholder="Должность">
-                <input type="text" class="place" placeholder="Кафедра">
-                <input type="email" class="mail" placeholder="Почта">
-                <input type="tel" class="phone" placeholder="Номер телефона +7...">
-            </div> -->
+            </div>  
           </form>
         </div>
       </div>

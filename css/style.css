@@ -228,7 +228,7 @@ legend {
 }
 
 .scroll_info {
-    padding: 10px 0 0 8px;
+  padding: 10px 0 0 8px;
   width: 333px;
   height: 100vh;
   display: flex;
@@ -325,6 +325,7 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
 input[type="number"]:hover,
 input[type="number"]:focus {
   -moz-appearance: number-input;
